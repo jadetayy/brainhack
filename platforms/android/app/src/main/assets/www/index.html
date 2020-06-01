@@ -1,54 +1,52 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/time.css">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>planB</title>
     </head>
-    <body id="time-page">
-        <h1>Keep track of your progress!!</h1>
 
-        <hr>
-
-        <p>
-            <label for="activity">Activity Type:</label>
-            <br>
-            <select name="activity" id="activity">
-                <option value="study">Study</option>
-                <option value="exercise">Exercise</option>
-                <option value="hobbies">Hobbies</option>
-            </select>
-        </p>
-
-        <p>
-            <label for="time">Time Spent (mins):</label>
-            <br>
-            <input name="time" id="time" type="number">
-        </p>
-
-        <p>
-            <label>Feeling:</label>
-            <br>
-            <div id="feeling-div">
-                <label>
-                    <input name="feeling" type="radio"> <img src="img/happy.png" class="feeling">
-                </label>
-                <label>
-                    <input name="feeling" type="radio"> <img src="img/neutral.png" class="feeling">
-                </label>
-                <label>
-                    <input name="feeling" type="radio"> <img src="img/sad.png" class="feeling">
-                </label>
+    <body>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,800' rel='stylesheet' type='text/css'>
+        <div class="app">
+                <h1>Welcome back</h1>
+    <!--            <div id="deviceready" class="blink">-->
+    <!--                <p class="event listening">Connecting to Device</p>-->
+    <!--                <p class="event received">Device is Ready</p>-->
+    <!--            </div>-->
+            <div id="box1">
             </div>
-        </p>
 
-        <p>
-            <label for="notes">Notes:</label>
-            <br>
-            <textarea id="notes" rows="4" cols="50"></textarea>
-        </p>
+            <div id="box2">
+            </div>
+
+            <div id="box3">
+            </div>
 
         <p>
             <input type="submit">
         </p>
 
-        <script type="text/javascript" src="js/time.js"></script>
+<!--        <script type="text/javascript" src="js/index.js"></script>-->
     </body>
+    <footer>
+        <div class="icon-bar">
+            <a class="active" href="#"><img src="svg/browser.svg"></a>
+            <a href="course.html"><img src="img/study.png"></a>
+            <a href="#"><img src="img/plus.png"></a>
+            <a href="exercise.html"><img src="img/gym.png"></a>
+            <a href="hobbies.html"><img src="img/games.png"></a>
+        </div>
+    </footer>
 </html>
