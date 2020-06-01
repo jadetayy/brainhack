@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/time.css">
+    </head>
+    <body id="time-page">
+        <h1>Keep track of your progress!!</h1>
+
+        <hr>
+
+        <p>
+            <label for="activity">Activity Type:</label>
+            <br>
+            <select name="activity" id="activity">
+                <option value="study">Study</option>
+                <option value="exercise">Exercise</option>
+                <option value="hobbies">Hobbies</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="time">Time Spent (mins):</label>
+            <br>
+            <input name="time" id="time" type="number">
+        </p>
+
+        <p>
+            <label>Feeling:</label>
+            <br>
+            <div id="feeling-div">
+                <label>
+                    <input name="feeling" type="radio"> <img src="img/happy.png" class="feeling">
+                </label>
+                <label>
+                    <input name="feeling" type="radio"> <img src="img/neutral.png" class="feeling">
+                </label>
+                <label>
+                    <input name="feeling" type="radio"> <img src="img/sad.png" class="feeling">
+                </label>
+            </div>
+        </p>
+
+        <p>
+            <label for="notes">Notes:</label>
+            <br>
+            <textarea id="notes" rows="4" cols="50"></textarea>
+        </p>
+
+        <p>
+            <input type="submit">
+        </p>
+
+        <script type="text/javascript" src="js/time.js"></script>
+    </body>
+</html>

@@ -28,32 +28,59 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; media-src *; img-src 'self' data: content:;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
+        <title>planB</title>
     </head>
+
     <body>
-    <div class="app">
-            <h1>Welcome back</h1>
-<!--            <div id="deviceready" class="blink">-->
-<!--                <p class="event listening">Connecting to Device</p>-->
-<!--                <p class="event received">Device is Ready</p>-->
-<!--            </div>-->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,800' rel='stylesheet' type='text/css'>
+        <div class="app">
+                <h1>Welcome back</h1>
+    <!--            <div id="deviceready" class="blink">-->
+    <!--                <p class="event listening">Connecting to Device</p>-->
+    <!--                <p class="event received">Device is Ready</p>-->
+    <!--            </div>-->
+            <div id="box1">
+            </div>
+
+            <div id="box2">
+            </div>
+
+            <div id="box3">
+            </div>
+
+        <ul class="stats">
+
+            <li class="sub_stats">Study</li>
+            <span class="prog">Current completion:</span>
+            <progress id="study" value="30" max="100">30%</progress>
+            
+            <li class="sub_stats">Exercise</li>
+            <span class="prog">Current completion:</span>
+            <progress id="exercise" value="50" max="100">50%</progress>
+            
+            <li class="sub_stats">Hobbies</li>
+            <span class="prog">Current completion:</span>
+            <progress id="hobbies" value="70" max="100">70%</progress>
+        </ul>
+
+
 
         </div>
 
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+<!--        <script type="text/javascript" src="js/index.js"></script>-->
     </body>
     <footer>
         <div class="icon-bar">
-            <a class="active" href="#"><img src="img/home.png"></a>
-            <a href="course.html"><img src="img/book.png"></a>
-            <a href="exercise.html" rel="import"><img src="img/gym.png"></a>
-            <a href="hobbies.html"><img src="img/internet.png"></a>
+            <a class="active" href="#"><img src="svg/browser.svg"></a>
+            <a href="course.html"><img src="img/study.png"></a>
+            <a href="time.html"><img src="img/plus.png"></a>
+            <a href="exercise.html"><img src="img/gym.png"></a>
+            <a href="hobbies.html"><img src="img/games.png"></a>
         </div>
     </footer>
 </html>
