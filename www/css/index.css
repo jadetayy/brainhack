@@ -142,6 +142,7 @@ h1 {
     padding-top: 2px;
 }
 
+
 #box1 {
     width: 380px;
     height: 180px;
@@ -150,7 +151,26 @@ h1 {
     background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 25px;
     margin-bottom: 15px;
-    margin-top: 15px
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#box1 img {
+    width: 70%;
+    float: right;
+    margin-top: -11%;
+    margin-right: -15%;
+    display: inline-block;
+}
+
+#box1 p {
+    color: #fff;
+    font-size: 20px;
+    width: 45%;
+    display: inline-block;
+    text-align: left;
+    margin-right: -15%;
+
 }
 
 #box2 {
@@ -161,7 +181,26 @@ h1 {
     background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 25px;
     margin-bottom: 15px;
-    margin-top: 15px
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#box2 img {
+    width: 50%;
+    float: left;
+    margin-top: -2%;
+    margin-right: -15%;
+    display: inline-block;
+}
+
+#box2 p {
+    color: #fff;
+    font-size: 20px;
+    width: 45%;
+    display: inline-block;
+    text-align: right;
+    margin-right: -8%;
+
 }
 
 #box3 {
@@ -172,7 +211,59 @@ h1 {
     background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 25px;
     margin-bottom: 15px;
-    margin-top: 15px
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#box3 img {
+    width: 70%;
+    float: right;
+    margin-top: -11%;
+    margin-right: -15%;
+    display: inline-block;
+}
+
+#box3 p {
+    color: #fff;
+    font-size: 20px;
+    width: 45%;
+    display: inline-block;
+    text-align: left;
+    margin-right: -15%;
+
+}
+
+#box4 {
+    width: 380px;
+    height: 180px;
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#box4 img {
+    width: 60%;
+    float: left;
+    margin-top: -5%;
+    margin-right: -15%;
+    margin-left: -5%;
+    display: inline-block;
+}
+
+#box4 p {
+    color: #fff;
+    font-size: 20px;
+    width: 45%;
+    display: inline-block;
+    text-align: right;
+    margin-right: -8%;
+
 }
 
 #plus_icon {
