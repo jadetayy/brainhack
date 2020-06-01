@@ -37,21 +37,8 @@ body {
 
 }
 
-/* Portrait layout (default)
+/* Portrait layout (default) */
 .app {
-<<<<<<< HEAD
-    /*background:url(../img/logo.png) no-repeat center top; !* 170px x 200px *!
-    position:absolute;             /* position in the center of the screen
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height
-    width:225px;                   /* text area width
-    /* text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text)
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height
-                                   /* offset horizontal: half of text area width
-} */
-=======
     /*background:url(../img/logo.png) no-repeat center top; !* 170px x 200px *!*/
     position:absolute;             /* position in the center of the screen */
     left:30%;
@@ -62,8 +49,7 @@ body {
     padding:120px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
     margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
-}
->>>>>>> 504595c04b437be14ea27821b2046e6d87d1e27f
+} 
 
 /* Landscape layout (with min-width) 
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
@@ -76,15 +62,10 @@ body {
 } */
 
 h1 {
-<<<<<<< HEAD
     font-size:40px;
     font-family: 'Arial';
     font-weight: bold;
     color: rgb(49, 29, 82);
-=======
-    font-size:30px;
-    font-weight:normal;
->>>>>>> 504595c04b437be14ea27821b2046e6d87d1e27f
     margin:0px;
     overflow:visible;
     padding:5px;
@@ -163,7 +144,6 @@ h1 {
     padding-top: 2px;
 }
 
-<<<<<<< HEAD
 .stats {
     list-style: none;
 
@@ -200,7 +180,8 @@ progress::-webkit-progress-value {
 .prog {
     font-size: 20px;
     font-style: italic;
-=======
+}
+
 #box1 {
     width: 380px;
     height: 180px;
@@ -242,5 +223,4 @@ progress::-webkit-progress-value {
 
 .courses img {
     width: 100%;
->>>>>>> 504595c04b437be14ea27821b2046e6d87d1e27f
 }
