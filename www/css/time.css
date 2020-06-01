@@ -1,0 +1,65 @@
+#time-page {
+    background-color: aliceblue;
+}
+
+#time-page h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#time-page label {
+    font-size: 20px;
+}
+
+#time-page #activity, input {
+    font-size: 20px;
+    width: 100%;
+    height: 7%;
+}
+
+#time-page input[type=number], select, textarea {
+    border: 2px solid #997BEC;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+#time-page input[type=submit] {
+    background-color: #997BEC;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+}
+
+#time-page #feeling-div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#time-page .feeling {
+    width: 27%;
+    padding: 3px;
+}
+
+/* HIDE RADIO */
+#time-page [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* IMAGE STYLES */
+#time-page [type=radio] + img {
+    cursor: pointer;
+}
+  
+/* CHECKED STYLES */
+#time-page [type=radio]:checked + img {
+    outline: 2px solid #997BEC;
+}
+
+#time-page textarea {
+    width: 100%;
+    font-size: 20px;
+}
