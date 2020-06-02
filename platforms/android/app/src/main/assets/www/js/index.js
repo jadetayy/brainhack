@@ -46,39 +46,13 @@ var app = {
 app.initialize();
 
 
-$('#Add').on('click',function(event){
+var total = [];
+$(document).on("click", ":submit", function(e) {
+    var stuff = ($('#email').val())
+    total = [JSON.stringify(stuff)];
+    localStorage.setItem('EmailsStuff', JSON.stringify(total));
+});
 
-    event.preventDefault();
-
-    var _List = $.parseJSON($('#AllData').val());
-
-
-    var _newObj =  {
-        'First': $('[name="First"]').val(),
-        'Middle': $('[name="Middle"]').val(),
-        'Last': $('[name="Last"]').val(),
-    };
-
-
-    _List.push(_newObj);
-
-
-
-    $('#AllData').val(JSON.stringify(_List));
-
-
-    console.log(_List);
-
-    const fs = require('fs');
-
-// Write data in 'Output.txt' .
-    fs.writeFile('Output.txt', _newObj, (err) => {
-
-        // In case of a error throw err.
-        if (err) throw err;
-    })
-
-
-
-
+$(document).on("click", "#loadEmail", function(e) {
+    alert(JSON.parse(localStorage.getItem('EmailsStuff')));
 });

@@ -16,27 +16,28 @@
 
 <!--        <h1 id="indexh1">Keep track of your productiveness!</h1>-->
 
-<!--        <hr>-->
+<!--        <form action="time.php" target="_parent">-->
+<!--            <p>-->
+<!--                <label for="activity">Activity Type:</label>-->
+<!--                <br>-->
+<!--                <select name="activity" id="activity">-->
+<!--                    <option value="study">Study</option>-->
+<!--                    <option value="exercise">Exercise</option>-->
+<!--                    <option value="hobbies">Hobbies</option>-->
+<!--                    <option value="others">Others</option>-->
 
-<!--        <p>-->
-<!--            <label for="activity">Activity Type:</label>-->
-<!--            <br>-->
-<!--            <select name="activity" id="activity">-->
-<!--                <option value="study">Study</option>-->
-<!--                <option value="exercise">Exercise</option>-->
-<!--                <option value="hobbies">Hobbies</option>-->
-<!--            </select>-->
-<!--        </p>-->
+<!--                </select>-->
+<!--            </p>-->
 
-<!--        <p>-->
-<!--            <label for="time">Time Spent (mins):</label>-->
-<!--            <br>-->
-<!--            <input name="time" id="time" type="number">-->
-<!--        </p>-->
+<!--            <p>-->
+<!--                <label for="time">Time Spent (mins):</label>-->
+<!--                <br>-->
+<!--                <input name="time" id="time" type="number">-->
+<!--            </p>-->
 
-<!--        <p>-->
-<!--            <label>Feeling:</label>-->
-<!--            <br>-->
+<!--            <p>-->
+<!--                <label>Feeling:</label>-->
+<!--                <br>-->
 <!--            <div id="feeling-div">-->
 <!--                <label>-->
 <!--                    <input name="feeling" type="radio"> <img src="img/happy.png" class="feeling">-->
@@ -48,17 +49,19 @@
 <!--                    <input name="feeling" type="radio"> <img src="img/sad.png" class="feeling">-->
 <!--                </label>-->
 <!--            </div>-->
-<!--        </p>-->
+<!--            </p>-->
 
-<!--        <p>-->
-<!--            <label for="notes">Notes:</label>-->
-<!--            <br>-->
-<!--            <textarea id="notes" rows="4" cols="50"></textarea>-->
-<!--        </p>-->
+<!--            <p>-->
+<!--                <label for="notes">Notes:</label>-->
+<!--                <br>-->
+<!--                <textarea id="notes" rows="4" cols="50"></textarea>-->
+<!--            </p>-->
 
-<!--        <p>-->
-<!--            <input type="submit">-->
-<!--        </p>-->
+<!--            <p>-->
+<!--                <input type="submit">-->
+<!--            </p>-->
+<!--        </form>-->
+
 
 <!--        <script type="text/javascript" src="js/time.js"></script>-->
 
@@ -75,44 +78,11 @@
 <!--    </footer>-->
 <!--</html>-->
 
+<form action="time.php" method="post">
 
+    Which is your favorite movie?
+    <input type="text" name="formMovie" maxlength="50">
 
-<script language="Javascript">
-    function download(filename, text) {
-        var pom = document.createElement('a');
-        pom.setAttribute('href', 'data:text/plain;charset=utf-8,' +
-
-            encodeURIComponent(text));
-        pom.setAttribute('download', filename);
-
-        pom.style.display = 'none';
-        document.body.appendChild(pom);
-
-        pom.click();
-
-        document.body.removeChild(pom);
-    }
-
-    function addTextHTML()
-    {
-        document.addtext.name.value = document.addtext.name.value + ".html"
-    }
-
-    function addTextTXT()
-    {
-        document.addtext.name.value = "/csv/" + document.addtext.name.value + ".txt"
-    }
-</script>
-
-
-
-
-<form name="addtext" onsubmit="download(this['name'].value, this['text'].value)">
-
-    <textarea rows="10" cols="70" name="text" placeholder="Type your text here:"></textarea>
-    <br>
-    <input type="text" name="name" value="" placeholder="File Name">
-    <input type="submit" onclick="addTextHTML();" value="Save As HTML">
-    <input type="submit" onclick="addTextTXT();" value="Save As TXT">
+    <input type="submit" name="formSubmit" value="Submit">
 
 </form>

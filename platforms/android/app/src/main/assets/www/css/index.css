@@ -309,10 +309,6 @@ progress::-webkit-progress-value {
     padding: 5%;
 }
 
-.exercises_main {
-    padding-top: 10%;
-}
-
 .header-bar {
     display: grid;
     background-color:#7B609C;
@@ -422,9 +418,6 @@ progress::-webkit-progress-value {
 /*exercises boxes*/
 .exercises_main {
     padding-bottom: 70%;
-    padding-top: 10%;
-    
-
 }
 
 .exercises_main a {

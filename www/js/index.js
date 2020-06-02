@@ -46,41 +46,13 @@ var app = {
 app.initialize();
 
 
-var submit = document.getElementById("submit");
-var capitalize = document.getElementById("capitalize");
-var clear = document.getElementById("clear");
+var total = [];
+$(document).on("click", ":submit", function(e) {
+    var stuff = ($('#email').val())
+    total = [JSON.stringify(stuff)];
+    localStorage.setItem('EmailsStuff', JSON.stringify(total));
+});
 
-submit.onclick = function(){
-    var name = document.getElementById("name").value;
-    var city = document.getElementById("city").value;
-
-    document.getElementById("outputName").innerText = name;
-    document.getElementById("outputCity").innerText = city;
-
-    var fh = fopen("data.txt", 3); // Open the file for writing
-
-    if(fh!=-1) // If the file has been successfully opened
-
-    {
-
-        var str = name;
-
-        fwrite(fh, str); // Write the string to a file
-
-        fclose(fh); // Close the file
-
-    }
-}
-
-capitalize.onclick = function(){
-    var name = document.getElementById("name").value;
-    var city = document.getElementById("city").value;
-
-    document.getElementById("name").value = name.toUpperCase();
-    document.getElementById("city").value = city.toUpperCase();
-}
-
-clear.onclick = function(){
-    document.getElementById("name").value = "";
-    document.getElementById("city").value = "";
-}
+$(document).on("click", "#loadEmail", function(e) {
+    alert(JSON.parse(localStorage.getItem('EmailsStuff')));
+});

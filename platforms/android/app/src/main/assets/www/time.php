@@ -1,24 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Store form data in .txt file</title>
-</head>
-<body>
-  <form method="post">
-    Enter Your Text Here:<br>
-    <input type="text" name="textdata"><br>
-    <input type="submit" name="submit">
-
-  </form>
-</body>
-</html>
 <?php
+  if($_POST['formSubmit'] == "Submit")
+  {
+    $varMovie = $_POST['formMovie'];
+  }
 
-if(isset($_POST['textdata']))
-{
-$data=$_POST['textdata'];
-$fp = fopen('data.txt', 'a');
-fwrite($fp, $data);
-fclose($fp);
-}
+  if($errorMessage != "")
+  {
+    echo("<p>There was an error:</p>\n");
+    echo("<ul>" . $errorMessage . "</ul>\n");
+  }
+  else
+  {
+    $fs = fopen("data.csv","a");
+    fwrite($fs,$varMovie . "\n");
+    fclose($fs);
+
+    header("Location: index.html");
+    exit;
+  }
 ?>
