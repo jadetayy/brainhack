@@ -318,6 +318,11 @@ progress::-webkit-progress-value {
     padding-bottom: 20%;
 }
 
+.sub_exercises_main img {
+    width: 20%;
+    height: 80px;
+}
+
 .header-bar {
     display: grid;
     background-color:#7B609C;
@@ -570,7 +575,6 @@ progress::-webkit-progress-value {
     margin: 0;
 }
 
-<<<<<<< HEAD
 .back-button {
     width: 100%; /* Full-width */
     background-color: #E4E4E4;
@@ -578,8 +582,11 @@ progress::-webkit-progress-value {
 
 /*courses boxes*/
 .courses_main {
-    padding-bottom: 70%;
-    padding-top: 10%;
+    padding-bottom: 20%;
+}
+
+.checked {
+    color: orange;
 }
 
 .courses_main a {
@@ -662,5 +669,3 @@ progress::-webkit-progress-value {
     padding-top: 15%;
     margin: 0;
 }
-=======
->>>>>>> 98c7d5f923c69b0a3df7568e00884b0e7808e2da

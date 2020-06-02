@@ -318,6 +318,11 @@ progress::-webkit-progress-value {
     padding-bottom: 20%;
 }
 
+.sub_exercises_main img {
+    width: 20%;
+    height: 80px;
+}
+
 .header-bar {
     display: grid;
     background-color:#7B609C;
@@ -577,8 +582,7 @@ progress::-webkit-progress-value {
 
 /*courses boxes*/
 .courses_main {
-    padding-bottom: 70%;
-    padding-top: 10%;
+    padding-bottom: 20%;
 }
 
 .checked {
