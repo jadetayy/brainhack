@@ -310,7 +310,12 @@ progress::-webkit-progress-value {
 }
 
 .exercises_main {
-    padding-top: 10%;
+    padding-bottom: 20%;
+}
+
+.sub_exercises_main {
+    padding-top: 15%;
+    padding-bottom: 20%;
 }
 
 .header-bar {
@@ -319,8 +324,7 @@ progress::-webkit-progress-value {
     position: fixed;
     left: 0%;
     top: 0%;
-    padding: 7px 0 7px 3px;
-    margin-bottom: 15px;
+    padding: 7px 0 7px 10px;
     width: 100%;
     grid-template-columns: 0% 100%;
     text-align: middle;
@@ -421,10 +425,7 @@ progress::-webkit-progress-value {
 
 /*exercises boxes*/
 .exercises_main {
-    padding-bottom: 70%;
-    padding-top: 10%;
-    
-
+    padding-bottom: 70%;    
 }
 
 .exercises_main a {
@@ -567,10 +568,5 @@ progress::-webkit-progress-value {
     padding-left: 2%;
     padding-top: 25%;
     margin: 0;
-}
-
-.back-button {
-    width: 100%; /* Full-width */
-    background-color: #E4E4E4;
 }
 
