@@ -42,7 +42,7 @@ body {
     position:absolute;             /* position in the center of the screen */
     left:30%;
     top:0%;
-    height:80px;                   /* text area height */
+    height:50px;                   /* text area height */
     width:375px;                   /* text area width */
     text-align:center;
     padding:120px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
@@ -315,7 +315,7 @@ progress::-webkit-progress-value {
 
 .header-bar {
     display: grid;
-    grid-template-columns: 5% 100%;
+    grid-template-columns: 0% 100%;
     text-align: middle;
     color: rgb(99,0,140);
     font-size: 250%;
