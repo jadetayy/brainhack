@@ -571,27 +571,6 @@ progress::-webkit-progress-value {
 
 
 /**************** style for hobbies.html ****************/
-
-/* .trend #thumbnail {
-    width: 100%;
-}
-
-.trend {
-    display: flex;
-    
-}
-
-.trend .description {
-    flex:1;
-    padding: 5px;
-    list-style: none;
-}
-
-.trend p {
-    text-align: center;
-
-} */
-
 .hobbies_main {
     padding-bottom: 70%;
 }
@@ -705,6 +684,25 @@ progress::-webkit-progress-value {
     padding-top: 15%;
     margin: 0;
 }
+
+/* ************** style for trending.html ************** */
+
+.trend_container {
+    display: grid;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    font-size: 13px;
+}
+
+.trend_container span {
+    text-align: center;
+    font-size: 12px;
+}
+
+.trend_container img {
+    width: 100%;
+}
+
 .back-button {
     width: 100%; /* Full-width */
     background-color: #E4E4E4;

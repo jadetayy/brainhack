@@ -315,8 +315,6 @@ progress::-webkit-progress-value {
 
 .header-bar {
     display: grid;
-<<<<<<< HEAD
-=======
     background-color:#7B609C;
     position: fixed;
     left: 0%;
@@ -324,7 +322,6 @@ progress::-webkit-progress-value {
     padding: 7px 0 7px 3px;
     margin-bottom: 15px;
     width: 100%;
->>>>>>> 6155f7950d4978d290618c0d01a9bb9fbdf4d048
     grid-template-columns: 0% 100%;
     text-align: middle;
     color: white;
@@ -574,27 +571,6 @@ progress::-webkit-progress-value {
 
 
 /**************** style for hobbies.html ****************/
-
-/* .trend #thumbnail {
-    width: 100%;
-}
-
-.trend {
-    display: flex;
-    
-}
-
-.trend .description {
-    flex:1;
-    padding: 5px;
-    list-style: none;
-}
-
-.trend p {
-    text-align: center;
-
-} */
-
 .hobbies_main {
     padding-bottom: 70%;
 }
@@ -708,6 +684,25 @@ progress::-webkit-progress-value {
     padding-top: 15%;
     margin: 0;
 }
+
+/* ************** style for trending.html ************** */
+
+.trend_container {
+    display: grid;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    font-size: 13px;
+}
+
+.trend_container span {
+    text-align: center;
+    font-size: 12px;
+}
+
+.trend_container img {
+    width: 100%;
+}
+
 .back-button {
     width: 100%; /* Full-width */
     background-color: #E4E4E4;
