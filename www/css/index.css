@@ -304,3 +304,15 @@ progress::-webkit-progress-value {
     width: 100%;
     font-size: 20px;
 }
+
+/** style for hobbies.html **/
+
+.trend #thumbnail {
+    width: 150px;
+}
+
+.trend .description {
+    display: inline;
+    list-style-type: none;
+    padding-right: 10px;
+}
