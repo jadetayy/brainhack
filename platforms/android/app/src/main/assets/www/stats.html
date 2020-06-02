@@ -12,14 +12,14 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,800' rel='stylesheet' type='text/css'>
 
         <div class="app">
-            <ul class="tab">
-                <li><a href="#" class="tablinks activetab" onclick="openStats(event, 'Week')">Week</a></li>
-                <li><a href="#" class="tablinks" onclick="openStats(event, 'Month')">Month</a></li>
-                <li><a href="#" class="tablinks" onclick="openStats(event, 'Year')">Year</a></li>
-            </ul>
             <div class="stats_main">
+                <ul class="tab">
+                    <li><a href="#" class="tablinks activetab" onclick="openStats(event, 'Week')">Week</a></li>
+                    <li><a href="#" class="tablinks" onclick="openStats(event, 'Month')">Month</a></li>
+                    <li><a href="#" class="tablinks" onclick="openStats(event, 'Year')">Year</a></li>
+                </ul>
 
-                <div id="Week" class="tabcontent" style="display: block">
+                <div id="Week" class="tabcontent" style="display: block; color: #000">
                     <h1 class="indexh1">Weekly overview</h1>
 
                     <div id="bigbox1">
@@ -52,7 +52,7 @@
                         </div>
 
                         <h4 class="title">Other</h4>
-                        <div class="progress_bar">
+                        <div class="progress_bar" style="padding-bottom: 30%">
                             <div class="progress2 progress-moved">
                                 <div class="progress-bar2" style="width: 15%"></div>
                             </div>
@@ -231,7 +231,7 @@
 
                             <!-- Row #5 -->
 
-                            <ul class="days" style="margin-bottom: 90%">
+                            <ul class="days">
                                 <li class="day">
                                     <div class="date">28</div>
                                 </li>
@@ -294,7 +294,7 @@
             <a href="index.html"><img src="img/browser.png"></a>
             <a href="course.html"><img src="img/study.png"></a>
             <a href="time.html"><img src="img/plus.png"></a>
-            <a href="exercise.html"><img src="svg/gym.png"></a>
+            <a href="exercise.html"><img src="img/gym.png"></a>
             <a href="hobbies.html"><img src="img/games.png"></a>
         </div>
     </footer>

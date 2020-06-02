@@ -608,9 +608,9 @@ progress::-webkit-progress-value {
     width: 90%;
 }
 
-.stats_main {
-    padding-bottom: 30%;
-}
+/*.stats_main {*/
+/*    padding-bottom: 30%;*/
+/*}*/
 
 #bigbox1 {
     width: 380px;
@@ -1011,18 +1011,19 @@ progress::-webkit-progress-value {
 /* Style the tab */
 ul.tab {
     list-style-type: none;
-    margin: -8px 0 0 -10px;
     padding: 0;
+    margin-top: 7px;
+    margin-left: 4px;
     overflow: hidden;
-    background-color: #7B609C;
-    width:405px;
+    width: 100%;
     left: 0;
+    background-color: #6e5e90;
 }
 
 /* Float the list items side by side */
 ul.tab li {
     float: left;
-    width:135px;
+    width:125px;
 
 }
 
@@ -1031,19 +1032,19 @@ ul.tab li a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
-    width:105px;
+    width:115px;
 
 }
 
 
 /* Create an active/current tablink class */
 ul.tab li a:focus, .activetab {
+    color: black;
     background-color: #E4E4E4;
-    color: #000;
 }
 
 /* Style the tab content */
@@ -1061,6 +1062,12 @@ ul.tab li a:focus, .activetab {
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+#Month {
+    margin-bottom: 30%;
+    height: 820px;
+
 }
 
 /*calendar*/
