@@ -580,7 +580,7 @@ progress::-webkit-progress-value {
     background-color: #E4E4E4;
 }
 
-/*courses boxes*/
+/*********courses**********/
 .courses_main {
     padding-bottom: 20%;
 }
@@ -617,7 +617,6 @@ progress::-webkit-progress-value {
     padding-right: 2%;
     padding-top: 15%;
     margin: 0;
-    opacity: 1;
 }
 
 #languages {
@@ -669,3 +668,167 @@ progress::-webkit-progress-value {
     padding-top: 15%;
     margin: 0;
 }
+
+
+/**************** style for hobbies.html ****************/
+.hobbies_main {
+    padding-bottom: 20%;
+}
+
+.hobbies_main a {
+    color: white;
+    text-decoration: none;
+}
+
+.sub_hobbies_main {
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+
+#trending {
+    width: 380px;
+    height: 170px;
+    background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(116, 28, 91), rgb(153, 47, 57));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(116, 28, 91), rgb(153, 47, 57)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#trending img {
+    width: 52%;
+    float: right;
+    margin-top: -47%;
+    display: inline-block;
+    fill-opacity: 50%;
+}
+
+#trending h3 {
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    font-size: 45px;
+    padding-right: 2%;
+    padding-top: 14%;
+    margin: 0;
+}
+
+#cooking {
+    width: 380px;
+    height: 150px;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../img/cooking.png");
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#cooking h3 {
+    color: white;
+    font-weight: normal;
+    text-align: right;
+    font-size: 40px;
+    padding-right: 2%;
+    padding-top: 15%;
+    margin: 0;
+}
+
+#art {
+    width: 380px;
+    height: 150px;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../img/art.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#art h3 {
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    font-size: 40px;
+    padding-left: 2%;
+    padding-top: 15%;
+    margin: 0;
+}
+
+#design {
+    width: 380px;
+    height: 150px;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../img/design.jpeg");
+}
+
+#design h3 {
+    color: white;
+    font-weight: normal;
+    text-align: right;
+    font-size: 40px;
+    padding-right: 2%;
+    padding-top: 15%;
+    margin: 0;
+}
+
+#photo {
+    width: 380px;
+    height: 150px;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../img/art.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#photo h3 {
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    font-size: 40px;
+    padding-left: 2%;
+    padding-top: 15%;
+    margin: 0;
+}
+
+
+/* ************** style for trending.html ************** */
+
+.trend_container {
+    margin-bottom: 5%;
+    margin-left: 2%;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.trend_container img {
+    width: 100%;
+}
+
+.trend_container #duration {
+    float:right;
+}
+
+.back-button {
+    width: 100%; /* Full-width */
+    background-color: #E4E4E4;
+}
+
