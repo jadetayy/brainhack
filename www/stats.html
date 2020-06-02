@@ -1,66 +1,302 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <title>Productiveness overview</title>
-</head>
-<body>
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,800' rel='stylesheet' type='text/css'>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Productiveness overview</title>
+    </head>
+    <body>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,800' rel='stylesheet' type='text/css'>
 
-<div class="app">
-    <div class="stats_main">
-        <h1 id="indexh1">Weekly overview</h1>
+        <div class="app">
+            <ul class="tab">
+                <li><a href="#" class="tablinks activetab" onclick="openStats(event, 'Week')">Week</a></li>
+                <li><a href="#" class="tablinks" onclick="openStats(event, 'Month')">Month</a></li>
+                <li><a href="#" class="tablinks" onclick="openStats(event, 'Year')">Year</a></li>
+            </ul>
+            <div class="stats_main">
 
-        <div id="bigbox">
-            <img src="img/stats.png">
-            <p id="bigboxp">This week, you have logged<br><br><br><br>hours.</p>
-            <p id="statsnum">52</p>
+                <div id="Week" class="tabcontent" style="display: block">
+                    <h1 class="indexh1">Weekly overview</h1>
+
+                    <div id="bigbox1">
+                        <img src="img/stats.png">
+                        <p id="bigboxp">This week, you have logged<br><br><br><br>hours.</p>
+                        <p id="statsnum">52</p>
+                    </div>
+
+                    <section class="progressbar">
+                        <h1 class="statsh1">Breakdown</h1>
+                        <h4 class="title">Study</h4>
+                        <div class="progress_bar">
+                            <div class="progress2 progress-moved">
+                                <div class="progress-bar2" style="width: 10%"></div>
+                            </div>
+                        </div>
+
+                        <h4 class="title">Exercise</h4>
+                        <div class="progress_bar">
+                            <div class="progress2 progress-moved">
+                                <div class="progress-bar2" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <h4 class="title">Hobbies</h4>
+                        <div class="progress_bar">
+                            <div class="progress2 progress-moved">
+                                <div class="progress-bar2" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                        <h4 class="title">Other</h4>
+                        <div class="progress_bar">
+                            <div class="progress2 progress-moved">
+                                <div class="progress-bar2" style="width: 15%"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div id="Month" class="tabcontent">
+                    <h1 class="indexh1">Monthly overview</h1>
+                    <div id="bigbox2">
+                        <p id="bigbox2p">For the month of June, you have logged 160 hours.</p>
+                        <img src="img/calendar.png">
+                    </div>
+
+                    <div id="calendar-wrap">
+                        <header>
+                            <h1 style="font-weight: normal">June 2020</h1>
+                        </header>
+                        <div id="calendar">
+                            <ul class="weekdays">
+                                <li>Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                            </ul>
+
+                            <!-- Days from previous month -->
+
+                            <ul class="days">
+                                <li class="day other-month">
+                                    <div class="date">31</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">1</div>
+                                    <div class="event">
+                                        <div class="event-desc">5hrs</div>
+                                    </div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">2</div>
+                                    <div class="event">
+                                        <div class="event-desc">10hrs</div>
+                                    </div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">3</div>
+                                    <div class="event">
+                                        <div class="event-desc">10hrs</div>
+                                    </div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">4</div>
+                                </li>
+
+                                <li class="day">
+                                    <div class="date">5</div>
+                                    <div class="event">
+                                        <div class="event-desc">15hrs</div>
+                                    </div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">6</div>
+                                    <div class="event">
+                                        <div class="event-desc">
+                                            12hrs
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- Row #2 -->
+
+                            <ul class="days">
+                                <li class="day">
+                                    <div class="date">7</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">8</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">9</div>
+                                    <div class="event">
+                                        <div class="event-desc">16hrs</div>
+                                    </div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">10</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">11</div>
+                                    <div class="event">
+                                        <div class="event-desc">3hrs</div>
+                                    </div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">12</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">13</div>
+                                </li>
+                            </ul>
+
+                            <!-- Row #3 -->
+
+                            <ul class="days">
+                                <li class="day">
+                                    <div class="date">14</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">15</div>
+                                    <div class="event">
+                                        <div class="event-desc">15hrs</div>
+                                    </div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">16</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">17</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">18</div><div class="event">
+                                    <div class="event-desc">
+                                        11hrs
+                                    </div>
+
+                                </div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">19</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">20</div>
+                                </li>
+                            </ul>
+
+                            <!-- Row #4 -->
+
+                            <ul class="days">
+                                <li class="day">
+                                    <div class="date">21</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">22</div>
+                                    <div class="event">
+                                        <div class="event-desc">2hrs</div>
+                                    </div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">23</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">24</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">25</div>
+                                    <div class="event">
+                                        <div class="event-desc">5hrs</div>
+                                    </div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">26</div>
+                                    <div class="event">
+                                        <div class="event-desc">
+                                            8hrs
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">27</div>
+                                </li>
+                            </ul>
+
+                            <!-- Row #5 -->
+
+                            <ul class="days" style="margin-bottom: 90%">
+                                <li class="day">
+                                    <div class="date">28</div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">29</div>
+                                    <div class="event">
+                                        <div class="event-desc">
+                                            9hrs
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="day">
+                                    <div class="date">30</div>
+                                </li>
+                                <li class="day other-month">
+                                    <div class="date">1</div>
+                                </li>
+                                <li class="day other-month">
+                                    <div class="date">2</div>
+                                </li>
+                                <li class="day other-month">
+                                    <div class="date">3</div>
+                                </li>
+                                <li class="day other-month">
+                                    <div class="date">4</div>
+                                </li>
+                            </ul>
+
+                        </div><!-- /. calendar -->
+                    </div><!-- /. wrap -->
+
+                </div>
+
+                <div id="Year" class="tabcontent">
+                    <h1 class="indexh1">Yearly overview</h1>
+                        <p style="font-size: 18px">In 2020, you have a total of logged 2100 hours. Here are your top moments:</p>
+                        <div id="smallbox1">
+                            <p class="text">Most hours logged in one day</p>
+                            <p class="num">18</p>
+                        </div>
+
+                        <div id="smallbox2">
+                            <p class="text">Most productive month</p>
+                            <p class="num">June</p>
+                        </div>
+
+                        <div id="smallbox3">
+                            <p class="text">Activity that logged the most hours</p>
+                            <p class="num"><img src="img/gym-white.png"></p>
+                        </div>
+                        <img src="img/party.png">
+                </div>
+            </div>
+
         </div>
-
-        <h1 class="statsh1">Breakdown</h1>
-        <h4 class="title">Study</h4>
-        <td class="progress_bar">
-            <div class="progress2 progress-moved">
-                <div class="progress-bar2" style="width: 10%"></div>
-            </div>
-        </td>
-
-        <h4 class="title">Exercise</h4>
-        <td class="progress_bar">
-            <div class="progress2 progress-moved">
-                <div class="progress-bar2" style="width: 80%"></div>
-            </div>
-        </td>
-
-        <h4 class="title">Hobbies</h4>
-        <td class="progress_bar">
-            <div class="progress2 progress-moved">
-                <div class="progress-bar2" style="width: 50%"></div>
-            </div>
-        </td>
-
-        <h4 class="title">Other</h4>
-        <td class="progress_bar">
-            <div class="progress2 progress-moved">
-                <div class="progress-bar2" style="width: 15%"></div>
-            </div>
-        </td>
-    </div>
-</div>
-<script type="text/javascript" src="js/time.js"></script>
-</body>
-<footer>
-    <div class="icon-bar">
-        <a href="index.html"><img src="img/browser.png"></a>
-        <a href="course.html"><img src="img/study.png"></a>
-        <a href="time.html"><img src="img/plus.png"></a>
-        <a href="exercise.html"><img src="svg/gym.svg"></a>
-        <a href="hobbies.html"><img src="img/games.png"></a>
-    </div>
-</footer>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+    <footer>
+        <div class="icon-bar">
+            <a href="index.html"><img src="img/browser.png"></a>
+            <a href="course.html"><img src="img/study.png"></a>
+            <a href="time.html"><img src="img/plus.png"></a>
+            <a href="exercise.html"><img src="svg/gym.png"></a>
+            <a href="hobbies.html"><img src="img/games.png"></a>
+        </div>
+    </footer>
 </html>
 

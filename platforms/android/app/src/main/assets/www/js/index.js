@@ -45,14 +45,16 @@ var app = {
 
 app.initialize();
 
-
-var total = [];
-$(document).on("click", ":submit", function(e) {
-    var stuff = ($('#email').val())
-    total = [JSON.stringify(stuff)];
-    localStorage.setItem('EmailsStuff', JSON.stringify(total));
-});
-
-$(document).on("click", "#loadEmail", function(e) {
-    alert(JSON.parse(localStorage.getItem('EmailsStuff')));
-});
+function openStats(evt, period) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" activetab", "");
+    }
+    document.getElementById(period).style.display = "block";
+    evt.currentTarget.className += " activetab";
+}

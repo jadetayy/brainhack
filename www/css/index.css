@@ -64,7 +64,7 @@ a {
     text-decoration: none;
 }
 
-#indexh1 {
+.indexh1 {
     font-size:35px;
     font-weight: normal;
     color: #000;
@@ -134,7 +134,6 @@ a {
 .active {
     /*background-color: #6e5e90; !* Add an active/current color *!*/
     filter: invert(42%) sepia(10%) saturate(1352%) hue-rotate(225deg) brightness(100%) contrast(119%);
-
 }
 
 .icon-bar img {
@@ -152,6 +151,9 @@ a {
     font-weight: normal;
     text-align: left;
     color: #000;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 progress {
@@ -607,18 +609,93 @@ progress::-webkit-progress-value {
 }
 
 .stats_main {
-    padding-bottom: 20%;
+    padding-bottom: 30%;
 }
 
-#bigbox {
+#bigbox1 {
     width: 380px;
     height: 300px;
     background: #ad5389; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
     border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
 }
 
+#bigbox1 img {
+    width: 75%;
+    float: right;
+    margin-top: 16%;
+    margin-right: -10%;
+    display: inline-block;
+}
+
+#bigboxp {
+    color: #fff;
+    font-size: 30px;
+    width: 80%;
+    display: inline-block;
+    text-align: left;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: -12%;
+}
+
+#bigbox2 {
+    width: 380px;
+    height: 300px;
+    background: #ad5389;
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+    background: linear-gradient(to right, #3c1053, #ad5389);
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#bigbox2 img {
+    width: 75%;
+    float: left;
+    margin-left: -5%;
+    display: inline-block;
+    margin-top: -15%;
+}
+
+#bigbox2p {
+    color: #fff;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 4%;
+}
+
+#bigbox2 {
+    width: 380px;
+    height: 300px;
+    background: #ad5389;
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+    background: linear-gradient(to right, #3c1053, #ad5389);
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#bigbox2 img {
+    width: 75%;
+    float: left;
+    margin-left: -5%;
+    display: inline-block;
+    margin-top: -15%;
+}
+
+#bigbox2p {
+    color: #fff;
+    font-size: 25px;
+    text-align: right;
+    margin-right: 4%;
+}
 /*********courses**********/
 .courses_main {
     padding-bottom: 20%;
@@ -662,8 +739,6 @@ progress::-webkit-progress-value {
     width: 380px;
     height: 180px;
     background: #ad5389;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-image: url("../img/languages.jpg");
     background-size: cover;
     opacity: 0.7;
@@ -687,8 +762,6 @@ progress::-webkit-progress-value {
     width: 380px;
     height: 180px;
     background: #ad5389;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-image: url("../img/marketing.jpg");
     background-size: cover;
     opacity: 0.7;
@@ -698,24 +771,6 @@ progress::-webkit-progress-value {
     overflow: hidden;
 }
 
-#bigbox img {
-    width: 75%;
-    float: right;
-    margin-top: 16%;
-    margin-right: -10%;
-    display: inline-block;
-}
-
-#bigboxp {
-    color: #fff;
-    font-size: 30px;
-    width: 80%;
-    display: inline-block;
-    text-align: left;
-    position: absolute;
-    margin-top: 8%;
-    margin-left: -12%;
-}
 
 #statsnum {
     color: #fff;
@@ -790,9 +845,7 @@ progress::-webkit-progress-value {
 #cooking {
     width: 380px;
     height: 150px;
-    background: #ad5389;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ad5389;
     background-image: url("../img/cooking.png");
     background-size: cover;
     opacity: 0.7;
@@ -815,9 +868,7 @@ progress::-webkit-progress-value {
 #art {
     width: 380px;
     height: 150px;
-    background: #ad5389;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ad5389;
     background-image: url("../img/art.jpg");
     background-size: cover;
     opacity: 0.7;
@@ -840,9 +891,7 @@ progress::-webkit-progress-value {
 #design {
     width: 380px;
     height: 150px;
-    background: #ad5389;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ad5389;
     background-image: url("../img/design.jpeg");
     background-size: cover;
     opacity: 0.7;
@@ -865,9 +914,7 @@ progress::-webkit-progress-value {
 #photo {
     width: 380px;
     height: 150px;
-    background: #ad5389;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ad5389;
     background-image: url("../img/art.jpg");
     background-size: cover;
     opacity: 0.7;
@@ -957,5 +1004,207 @@ progress::-webkit-progress-value {
     padding: 0;
     margin: 0;
     text-transform: uppercase;
+}
+
+
+/*tabs*/
+/* Style the tab */
+ul.tab {
+    list-style-type: none;
+    margin: -8px 0 0 -10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7B609C;
+    width:405px;
+    left: 0;
+}
+
+/* Float the list items side by side */
+ul.tab li {
+    float: left;
+    width:135px;
+
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    width:105px;
+
+}
+
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .activetab {
+    background-color: #E4E4E4;
+    color: #000;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/*calendar*/
+
+#calendar {
+    width: 100%;
+}
+
+#calendar a {
+    color: #7B609C;
+    text-decoration: none;
+}
+
+#calendar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#calendar li {
+    display: block;
+    float: left;
+    width:14.342%;
+    padding: 5px;
+    box-sizing:border-box;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+#calendar ul.weekdays {
+    height: 40px;
+    background: #7B609C;
+}
+
+#calendar ul.weekdays li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #fff;
+    font-size: 13px;
+}
+
+#calendar .days li {
+    height: 80px;
+    width: 54px;
+}
+
+#calendar .days li:hover {
+    background: #d3d3d3;
+}
+
+#calendar .date {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 4px;
+    background: #333;
+    color: #fff;
+    width: 20px;
+    border-radius: 50%;
+    float: right;
+}
+
+#calendar .event {
+    clear: both;
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    width: 33px;
+    height: 20px;
+    /*margin-top: 40px;*/
+    margin-bottom: 5px;
+    margin-left: 0px;
+    line-height: 14px;
+    background: #e2dcf2;
+    border: 1px solid #c8bddc;
+    color: #7B609C;
+    text-decoration: none;
+}
+
+#calendar .event-desc {
+    color: #666;
+    margin: 3px 0 7px 0;
+    text-decoration: none;
+}
+
+#calendar .other-month {
+    background: #f5f5f5;
+    color: #666;
+}
+
+#Year img {
+    width: 100%;
+}
+
+#Year .text {
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    text-align: left;
+    margin-left: 10px;
+    float: left;
+    /*margin-top: 10px;*/
+}
+
+#Year .num{
+    color: white;
+    font-size: 40px;
+    width: 20%;
+    text-align: right;
+    float: right;
+    margin-top: 20px;
+    /*margin-left: -15px;*/
+    padding-right: 30px;
+
+}
+
+#smallbox1, #smallbox2, #smallbox3 {
+    width: 380px;
+    height: 100px;
+    background: #DA4453;  /* fallback for old browsers */
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#smallbox1 {
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+}
+
+#smallbox2 {
+    background-color: #bf3a30;
+    background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+
+}
+
+#smallbox3 {
+    background-color: #42378f;
+    background-image: linear-gradient(315deg, #f53844 0%, #42378f 74%);
 }
 
