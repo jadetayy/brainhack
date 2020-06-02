@@ -30,11 +30,10 @@ body {
     font-size:12px;
     height:100vh;
     margin:0px;
-    padding:0px;
     /* Padding to avoid the "unsafe" areas behind notches in the screen */
-    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-right, 0px);
+    /*padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 60px) env(safe-area-inset-right, 0px);*/
+    /*padding-bottom: 30%;*/
     width:100%;
-
 }
 
 /* Portrait layout (default) */
@@ -43,7 +42,7 @@ body {
     position:absolute;             /* position in the center of the screen */
     left:30%;
     top:0%;
-    height:50px;                   /* text area height */
+    height:80px;                   /* text area height */
     width:375px;                   /* text area width */
     text-align:center;
     padding:120px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
@@ -55,23 +54,23 @@ body {
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
         background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height 
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height 
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height
                                       /* offset horizontal: half of image width and text area width
     }
 } */
 
-h1 {
-    font-size:40px;
-    font-family: 'Arial';
-    font-weight: bold;
-    color: rgb(49, 29, 82);
+#indexh1 {
+    font-size:35px;
+    font-weight: normal;
+    color: #000;
     margin:0px;
     overflow:visible;
-    padding:5px;
+    /*padding:5px;*/
     text-align:left;
     top:0;
-    font-family: Montserrat;
+    padding-top: 2%;
+    padding-left: 2%;
 }
 
 .event {
@@ -113,7 +112,7 @@ h1 {
 /*SAMPLE*/
 .icon-bar {
   width: 100%; /* Full-width */
-  /*background-color: #555; !* Dark-grey background *!*/
+  background-color: #E4E4E4;
   overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -128,10 +127,6 @@ h1 {
   padding: 1%;
 }
 
-/*.icon-bar a:hover {*/
-/*    background-color: #6e5e90; !* Add a hover color *!*/
-/*}*/
-
 .active {
     /*background-color: #6e5e90; !* Add an active/current color *!*/
     filter: invert(42%) sepia(10%) saturate(1352%) hue-rotate(225deg) brightness(100%) contrast(119%);
@@ -144,8 +139,7 @@ h1 {
     padding-top: 2px;
 }
 
-<<<<<<< HEAD
-=======
+/*stats progress bar*/
 .stats {
     list-style: none;
 
@@ -174,7 +168,6 @@ progress::-webkit-progress-value {
 
 .app .sub_stats {
     font-size: 20px;
-    font-family: Arial;
     font-weight: bold;
     margin: 5px 0 0 0;
 }
@@ -183,8 +176,10 @@ progress::-webkit-progress-value {
     font-size: 20px;
     font-style: italic;
 }
->>>>>>> 55777f67f18c42ebac3699d2f4843d7dfe8a6cc8
 
+.index_main {
+    padding-bottom: 20%;
+}
 #box1 {
     width: 380px;
     height: 180px;
@@ -314,10 +309,8 @@ progress::-webkit-progress-value {
     padding: 5%;
 }
 
-.main {
-    height:100%;                   /* text area height */
-    width:100%;                   /* text area width */
-    margin: 5% 5% -15% 5%;
+.exercises_main {
+    padding-bottom: 20%;
 }
 
 .container {
@@ -331,9 +324,13 @@ progress::-webkit-progress-value {
     width: 100%;
 }
 
+.description {
+    text-align: left;
+}
+
 /**Style for time.html**/
 #time-page {
-    background-color: aliceblue;
+    background-color: #E4E4E4;
 }
 
 #time-page h1 {
@@ -347,20 +344,24 @@ progress::-webkit-progress-value {
 
 #time-page #activity, input {
     font-size: 20px;
-    width: 100%;
     height: 7%;
+    width: 385px;
+
 }
 
+
 #time-page input[type=number], select, textarea {
-    border: 2px solid #997BEC;
+    border: 2px solid #7B609C;
     border-radius: 4px;
     background-color: #ffffff;
+    width: 380px;
 }
 
 #time-page input[type=submit] {
-    background-color: #997BEC;
+    background-color: #7B609C;
     border: 2px solid #ffffff;
     border-radius: 4px;
+    width: 380px;
 }
 
 #time-page #feeling-div {
@@ -390,10 +391,158 @@ progress::-webkit-progress-value {
   
 /* CHECKED STYLES */
 #time-page [type=radio]:checked + img {
-    outline: 2px solid #997BEC;
+    outline: 2px solid #7B609C;
 }
 
 #time-page textarea {
     width: 100%;
     font-size: 20px;
 }
+
+/*exercises boxes*/
+.exercises_main {
+    padding-bottom: 70%;
+}
+
+.exercises_main a {
+    color: white;
+    text-decoration: none;
+}
+
+#hiit {
+    width: 380px;
+    height: 180px;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../img/hiit.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#hiit h3 {
+    color: white;
+    font-weight: normal;
+    text-align: right;
+    font-size: 50px;
+    padding-right: 2%;
+    padding-top: 10%;
+    margin: 0;
+}
+#hiit h2 {
+    color: white;
+    font-weight: normal;
+    text-align: right;
+    /*font-size: 30px;*/
+    padding-right: 2%;
+    margin: 0;
+}
+
+#abs {
+    width: 380px;
+    height: 180px;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../img/abs.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#abs #dumbbells, h3 {
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    font-size: 50px;
+    padding-left: 2%;
+    padding-top: 15%;
+    margin: 0;
+}
+
+#arms {
+    width: 380px;
+    height: 180px;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../img/arms.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#arms h3 {
+    color: white;
+    font-weight: normal;
+    text-align: right;
+    font-size: 50px;
+    padding-right: 2%;
+    padding-top: 15%;
+    margin: 0;
+}
+
+.squares h1 {
+    font-size:25px;
+    font-weight: normal;
+    color: #000;
+    margin:0px;
+    overflow:visible;
+    /*padding:5px;*/
+    text-align:left;
+    top:0;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+#tenmin {
+    width: 180px;
+    height: 180px;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../img/ten.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+    float: left;
+}
+
+#thirtymin {
+    width: 180px;
+    height: 180px;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../img/thirty.png");
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+    float: right;
+}
+
+.squares h3 {
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    font-size: 35px;
+    padding-left: 2%;
+    padding-top: 25%;
+    margin: 0;
+}
+
