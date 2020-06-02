@@ -575,13 +575,12 @@ progress::-webkit-progress-value {
     margin: 0;
 }
 
-<<<<<<< HEAD
 .back-button {
     width: 100%; /* Full-width */
     background-color: #E4E4E4;
 }
 
-/*courses boxes*/
+/*********courses**********/
 .courses_main {
     padding-bottom: 20%;
 }
@@ -602,7 +601,74 @@ progress::-webkit-progress-value {
     background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-image: url("../img/coding.jpg");
-=======
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#coding h3 {
+    color: white;
+    font-weight: normal;
+    text-align: right;
+    font-size: 40px;
+    padding-right: 2%;
+    padding-top: 15%;
+    margin: 0;
+}
+
+#languages {
+    width: 380px;
+    height: 180px;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../img/languages.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#languages h3 {
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    font-size: 40px;
+    padding-left: 2%;
+    padding-top: 15%;
+    margin: 0;
+}
+
+#marketing {
+    width: 380px;
+    height: 180px;
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../img/marketing.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+#marketing h3 {
+    color: white;
+    font-weight: normal;
+    text-align: right;
+    font-size: 40px;
+    padding-right: 2%;
+    padding-top: 15%;
+    margin: 0;
+}
+
 
 /**************** style for hobbies.html ****************/
 .hobbies_main {
@@ -615,8 +681,13 @@ progress::-webkit-progress-value {
 }
 
 .sub_hobbies_main {
-    padding-top: 10%;
+    padding-top: 15%;
     padding-bottom: 15%;
+}
+
+.sub_hobbies_main img {
+    width: 90%;
+    height: 200px;
 }
 
 #trending {
@@ -656,7 +727,6 @@ progress::-webkit-progress-value {
     background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-image: url("../img/cooking.png");
->>>>>>> 0a3ecfd3ba8d216d347fb14577759b8d120224cd
     background-size: cover;
     opacity: 0.7;
     border-radius: 25px;
@@ -665,11 +735,7 @@ progress::-webkit-progress-value {
     overflow: hidden;
 }
 
-<<<<<<< HEAD
-#coding h3 {
-=======
 #cooking h3 {
->>>>>>> 0a3ecfd3ba8d216d347fb14577759b8d120224cd
     color: white;
     font-weight: normal;
     text-align: right;
@@ -677,18 +743,6 @@ progress::-webkit-progress-value {
     padding-right: 2%;
     padding-top: 15%;
     margin: 0;
-<<<<<<< HEAD
-    opacity: 1;
-}
-
-#languages {
-    width: 380px;
-    height: 180px;
-    background: #ad5389;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-image: url("../img/languages.jpg");
-=======
 }
 
 #art {
@@ -698,7 +752,6 @@ progress::-webkit-progress-value {
     background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-image: url("../img/art.jpg");
->>>>>>> 0a3ecfd3ba8d216d347fb14577759b8d120224cd
     background-size: cover;
     opacity: 0.7;
     border-radius: 25px;
@@ -707,11 +760,7 @@ progress::-webkit-progress-value {
     overflow: hidden;
 }
 
-<<<<<<< HEAD
-#languages h3 {
-=======
 #art h3 {
->>>>>>> 0a3ecfd3ba8d216d347fb14577759b8d120224cd
     color: white;
     font-weight: normal;
     text-align: left;
@@ -721,15 +770,6 @@ progress::-webkit-progress-value {
     margin: 0;
 }
 
-<<<<<<< HEAD
-#marketing {
-    width: 380px;
-    height: 180px;
-    background: #ad5389;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-image: url("../img/marketing.jpg");
-=======
 #design {
     width: 380px;
     height: 150px;
@@ -737,7 +777,6 @@ progress::-webkit-progress-value {
     background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-image: url("../img/design.jpeg");
->>>>>>> 0a3ecfd3ba8d216d347fb14577759b8d120224cd
     background-size: cover;
     opacity: 0.7;
     border-radius: 25px;
@@ -746,11 +785,7 @@ progress::-webkit-progress-value {
     overflow: hidden;
 }
 
-<<<<<<< HEAD
-#marketing h3 {
-=======
 #design h3 {
->>>>>>> 0a3ecfd3ba8d216d347fb14577759b8d120224cd
     color: white;
     font-weight: normal;
     text-align: right;
@@ -759,8 +794,6 @@ progress::-webkit-progress-value {
     padding-top: 15%;
     margin: 0;
 }
-<<<<<<< HEAD
-=======
 
 #photo {
     width: 380px;
@@ -810,4 +843,3 @@ progress::-webkit-progress-value {
     background-color: #E4E4E4;
 }
 
->>>>>>> 0a3ecfd3ba8d216d347fb14577759b8d120224cd
