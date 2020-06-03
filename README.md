@@ -1,60 +1,51 @@
-# brainhack
+# planB
 
 ## Project title
-A little info about your project and/ or overview that explains **what** the project is about.
-
-## Motivation
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
-
-## Build status
-Build status of continus integration i.e. travis, appveyor etc. Ex. - 
-
-[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
-
-## Code style
-If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex. -
-
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+planB is an app which encourages users to spend their time at home more productively by suggesting courses, exercises and other recreational activities that they can do at home.
  
-## Screenshots
+## Screenshots (???)
 Include logo/demo screenshot etc.
 
 ## Tech/framework used
-Ex. -
-
-<b>Built with</b>
-- [Electron](https://electron.atom.io)
+HTML, CSS, JavaScript, wrapped with Cordova
 
 ## Features
-What makes your project stand out?
+### Home Page
+Allows users to have an overview of their weekly productive hours and access different tabs by clicking on the boxes in the homepage or icons on the bottom navigation bar.
 
-## Code Example
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+### Add Time Tab
+Accessed by clicking on the plus icon on the bottom navigation bar.
+Allows users to log the time spent for each activity type, describe their feelings and additional notes.
 
-## Installation
-Provide step by step series of examples and explanations about how to get a development env running.
+### Statistics Page
+Shows the weekly breakdown of hours spent on each activity.
+Shows the monthly calendar and number of hours logged each day.
+Shows the total logged hours yearly, highest logged hours by day, month, and activity of the year.
 
-## API Reference
+### Study Tab
+Categories: Coding, Languages, Marketing
+Directs users to the course website on click.
+Ratings provided to facilitate decision making.
+
+### Exercise Tab
+Categories: HIIT, Arms, Abs, Under 10 Minutes, Under 30 Minutes
+Directs users to the YouTube video on click.
+Duration provided to help in time-management.
+
+### Hobbies Tab
+Categories: What's Trending, Cooking, Arts & Crafts, Design
+Directs users to the YouTube video on click.
+Duration provided to help in time-management.
+
+## API Reference (???)
 
 Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
 
-## Tests
-Describe and show how to run the tests with code examples.
 
-## How to use?
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
+## Contributors
+Carine Tan Kailin: http://github.com/carine99
+Koh Gladys: http://github.com/gladyskoh
+Koh Min: https://github.com/kohmin
+Tay Hui Xin, Jade: https://github.com/jadetayy
 
-## Contribute
 
-Let people know how they can contribute into your project. A [contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md) will be a big plus.
-
-## Credits
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project. 
-
-#### Anything else that seems useful
-
-## License
-A short snippet describing the license (MIT, Apache etc)
-
-MIT © [Yourname]()
