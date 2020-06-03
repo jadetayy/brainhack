@@ -1,4 +1,5 @@
 # planB
+<img src="www/img/logo.png" style="width:10px">
 
 ## Project title
 planB is an app which encourages users to spend their time at home more productively by suggesting courses, exercises and other recreational activities that they can do at home.
