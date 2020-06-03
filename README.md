@@ -51,11 +51,6 @@ Directs users to the YouTube video on click via the thumbnail.
 Duration is provided to help in time-management.
 <p style="text-align:center;"><img src="www/img/ss11.png" width="200" height="400" align=”center”></p>
 
-## API Reference (???)
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-
 ## Contributors
 Carine Tan Kailin: http://github.com/carine99
 <br>
