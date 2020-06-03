@@ -1,6 +1,4 @@
 # planB
-
-## Project title
 planB is an app which encourages users to spend their time at home more productively by suggesting courses, exercises and other recreational activities that they can do at home.
  
 ## Screenshots (???)
