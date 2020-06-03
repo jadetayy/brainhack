@@ -41,9 +41,9 @@ Depending on the size of the project, if it is small and simple enough the refer
 
 
 ## Contributors
-Carine Tan Kailin: http://github.com/carine99
-Koh Gladys: http://github.com/gladyskoh
-Koh Min: https://github.com/kohmin
+Carine Tan Kailin: http://github.com/carine99, 
+Koh Gladys: http://github.com/gladyskoh, 
+Koh Min: https://github.com/kohmin, 
 Tay Hui Xin, Jade: https://github.com/jadetayy
 
 
