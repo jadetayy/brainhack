@@ -15,6 +15,8 @@ Allows users to have an overview of their weekly productive hours and access dif
 Accessed by clicking on the plus icon on the bottom navigation bar.
 <br>
 Allows users to log the time spent for each activity type, describe their feelings and additional notes.
+<br>
+Click submit button to update logged hours for selected activity type.
 <p style="text-align:center;"><img src="www/img/ss7.png" width="200" height="400" align=”center”></p>
 
 ### Statistics Page
@@ -30,23 +32,23 @@ Categories: Coding, Languages, Marketing.
 <p style="text-align:center;"><img src="www/img/ss5.png" width="200" height="400" align=”center”></p>
 Directs users to the course website on click.
 <br>
-Ratings provided to facilitate decision making.
+Ratings is provided to facilitate decision making.
 <p style="text-align:center;"><img src="www/img/ss6.png" width="200" height="400" align=”center”></p>
 
 ### Exercise Tab
 Categories: HIIT, Arms, Abs, Under 10 Minutes, Under 30 Minutes. 
 <p style="text-align:center;"><img src="www/img/ss8.png" width="200" height="400" align=”center”></p>
-Directs users to the YouTube video on click.
+Directs users to the YouTube video on click via the play button.
 <br>
-Duration provided to help in time-management.
+Duration is provided to help in time-management.
 <p style="text-align:center;"><img src="www/img/ss9.png" width="200" height="400" align=”center”></p>
 
 ### Hobbies Tab
 Categories: What's Trending, Cooking, Arts & Crafts, Design. 
 <p style="text-align:center;"><img src="www/img/ss10.png" width="200" height="400" align=”center”></p>
-Directs users to the YouTube video on click.
+Directs users to the YouTube video on click via the thumbnail.
 <br>
-Duration provided to help in time-management.
+Duration is provided to help in time-management.
 <p style="text-align:center;"><img src="www/img/ss11.png" width="200" height="400" align=”center”></p>
 
 ## API Reference (???)
