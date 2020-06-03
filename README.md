@@ -21,17 +21,17 @@ Shows the monthly calendar and number of hours logged each day.
 Shows the total logged hours yearly, highest logged hours by day, month, and activity of the year.
 
 ### Study Tab
-Categories: Coding, Languages, Marketing
+Categories: Coding, Languages, Marketing. 
 Directs users to the course website on click.
 Ratings provided to facilitate decision making.
 
 ### Exercise Tab
-Categories: HIIT, Arms, Abs, Under 10 Minutes, Under 30 Minutes
+Categories: HIIT, Arms, Abs, Under 10 Minutes, Under 30 Minutes. 
 Directs users to the YouTube video on click.
 Duration provided to help in time-management.
 
 ### Hobbies Tab
-Categories: What's Trending, Cooking, Arts & Crafts, Design
+Categories: What's Trending, Cooking, Arts & Crafts, Design. 
 Directs users to the YouTube video on click.
 Duration provided to help in time-management.
 
